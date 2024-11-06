@@ -60,7 +60,7 @@ The plugin comes with built-in styles for the modal overlay and animations. The 
 
 ## Browser Support
 
-The plugin supports all modern browsers and includes fallbacks for browsers that don't support the View Transitions API.
+The plugin supports all modern browsers and includes fallbacks for browsers that don't support the [View Transitions API.](https://developer.mozilla.org/en-US/docs/Web/API/Document/startViewTransition)
 
 ## Development
 
@@ -79,8 +79,8 @@ npm run build
 ## Technical Details
 
 The plugin is built using:
-- Vite for building and development
-- Zoid for cross-domain component communication
+- [Vite](https://vite.dev/) for building and development
+- [Zoid](https://www.npmjs.com/package/@krakenjs/zoid) for cross-domain component communication
 - CSS animations for smooth transitions
 
 ## License

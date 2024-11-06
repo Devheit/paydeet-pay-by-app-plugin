@@ -1,6 +1,6 @@
 # Paydeet Pay By App Plugin
 
-A JavaScript plugin that enables seamless integration of Paydeet's pay-by-app checkout experience into your web application.
+A JavaScript plugin that enables seamless integration of [Paydeet's](https://www.paydeet.com/) pay-by-app checkout experience into your web application.
 
 ## Installation
 ```

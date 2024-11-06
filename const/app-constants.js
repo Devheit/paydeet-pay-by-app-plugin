@@ -1,4 +1,4 @@
-export const appUrl = 'https://staging.d1hcmrwpxa0xw3.amplifyapp.com/';
+export const appUrl = 'http://localhost:5173/';
 
 export const appRootId = 'pay-by-app';
 

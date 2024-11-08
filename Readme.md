@@ -17,33 +17,14 @@ npm install paydeet-pay-by-app-plugin
 
 ## Usage
 
-### Basic Implementation
+### Implementation
 ```javascript
 import PaydeetPlugin from 'paydeet-pay-by-app-plugin';
 // Initialize checkout
-PaydeetPlugin.checkout({
+await PaydeetPlugin.checkout({
 amount: 1000, // Amount in cents
 merchantId: 'your-merchant-id'
 });
-```
-
-
-### Advanced Implementation
-
-You can also use the Widget directly for more control:
-
-```javascript
-import PaydeetPlugin from 'paydeet-pay-by-app-plugin';
-const widget = PaydeetPlugin.PayByAppWidget({
-merchantId: 'your-merchant-id',
-amount: 1000,
-onCloseApp: (response) => {
-// Handle close event
-console.log(response);
-}
-});
-// Render the widget
-widget.render('#your-container-id');
 ```
 
 
@@ -52,7 +33,8 @@ widget.render('#your-container-id');
 | Prop | Type | Description |
 |------|------|-------------|
 | `amount` | number | The payment amount in cents |
-| `merchantId` | string | Your unique merchant identifier |
+| `apiKey` | string | Your unique merchant identifier |
+| `currency` | string | A currency that matches the list of currencies |
 
 ## Styling
 

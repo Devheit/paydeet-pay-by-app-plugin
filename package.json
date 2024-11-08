@@ -1,8 +1,11 @@
 {
   "name": "paydeet-pay-by-app-plugin",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Devheit/paydeet-pay-by-app-plugin.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -23,7 +23,8 @@ import PaydeetPlugin from 'paydeet-pay-by-app-plugin';
 // Initialize checkout
 await PaydeetPlugin.checkout({
 amount: 1000, // Amount in cents
-merchantId: 'your-merchant-id'
+apiKey: 'your-merchant-id',
+currency: 'USD'
 });
 ```
 
@@ -34,7 +35,7 @@ merchantId: 'your-merchant-id'
 |------|------|-------------|
 | `amount` | number | The payment amount in cents |
 | `apiKey` | string | Your unique merchant identifier |
-| `currency` | string | A currency that matches the list of currencies |
+| `currency` | string | A currency that matches the keys in [this list of currencies](https://gist.github.com/ksafranski/2973986)|
 
 ## Styling
 

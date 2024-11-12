@@ -1,6 +1,6 @@
-import checkout from './lib/main';
-import PayByAppWidget from './lib/Widget';
-import './style.css'
+import checkout from "./lib/main.js";
+import PayByAppWidget from "./lib/widget.js";
+import "./style.css";
 
 export default {
   checkout,

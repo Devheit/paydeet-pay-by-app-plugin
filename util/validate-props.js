@@ -5,6 +5,7 @@ function validateMainProps(props) {
     amount: validateNumber,
     apiKey: validateString,
     currency: validateCurrency,
+    businessId: validateString,
   };
 
   for (const key in expectedProps) {

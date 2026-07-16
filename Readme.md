@@ -4,7 +4,7 @@ A JavaScript plugin that enables seamless integration of [Paydeet's](https://www
 
 ## Installation
 ```
-npm install paydeet-pay-by-app-plugin
+npm i @devheit/paydeet-pay-by-app-plugin
 ```
 
 ## Features

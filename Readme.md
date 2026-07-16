@@ -4,7 +4,7 @@ A JavaScript plugin that enables seamless integration of [Paydeet's](https://www
 
 ## Installation
 ```
-npm i @devheit/paydeet-pay-by-app-plugin
+npm install @devheit/paydeet-pay-by-app-plugin
 ```
 
 ## Features
@@ -19,12 +19,13 @@ npm i @devheit/paydeet-pay-by-app-plugin
 
 ### Implementation
 ```javascript
-import PaydeetPlugin from 'paydeet-pay-by-app-plugin';
+import PaydeetPlugin from '@devheit/paydeet-pay-by-app-plugin';
 // Initialize checkout
 await PaydeetPlugin.checkout({
 amount: 1000, // Amount in cents
 apiKey: 'your-merchant-id',
-currency: 'USD'
+currency: 'USD',
+businessId: 'your-business-id'
 });
 ```
 
@@ -36,6 +37,7 @@ currency: 'USD'
 | `amount` | number | The payment amount in cents |
 | `apiKey` | string | Your unique merchant identifier |
 | `currency` | string | A currency that matches the keys in [this list of currencies](https://gist.github.com/ksafranski/2973986)|
+| `businessId` | string | Your unique business identifier |
 
 ## Styling
 

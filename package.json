@@ -1,6 +1,6 @@
 {
   "name": "@devheit/paydeet-pay-by-app-plugin",
-"version": "0.0.11",
+"version": "0.0.12",
   "type": "module",
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Devheit/paydeet-pay-by-app-plugin#readme",
   "main": "index.js",
+  "types": "index.d.ts",
   "directories": {
     "lib": "lib"
   },

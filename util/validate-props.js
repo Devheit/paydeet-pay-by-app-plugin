@@ -1,4 +1,6 @@
-import { validCurrencyMap } from "../const/app-constants.js";
+import {
+  validCurrencyMap,
+} from '../const/app-constants.js';
 
 function validateMainProps(props) {
   const expectedProps = {
@@ -6,6 +8,7 @@ function validateMainProps(props) {
     apiKey: validateString,
     currency: validateCurrency,
     businessId: validateString,
+    test: validateTestMode,
   };
 
   for (const key in expectedProps) {
@@ -18,14 +21,14 @@ function validateMainProps(props) {
 }
 
 function validateNumber(number) {
-  if (typeof number !== "number" || number <= 0) {
+  if (typeof number !== 'number' || number <= 0) {
     return false;
   }
   return true;
 }
 
 function validateString(string) {
-  if (typeof string !== "string" || string.length === 0) {
+  if (typeof string !== 'string' || string.length === 0) {
     return false;
   }
   return true;
@@ -35,4 +38,10 @@ function validateCurrency(currency) {
   return validCurrencyMap[currency] ? true : false;
 }
 
+function validateTestMode(isTestMode) {
+  if (typeof isTestMode !== 'boolean') {
+    return false;
+  }
+  return true;
+}
 export default validateMainProps;

@@ -19,6 +19,7 @@ export interface CheckoutProps {
   apiKey: string;
   currency: CurrencyCode;
   businessId: string;
+  isTesting?: boolean = false;
 }
 
 export interface CheckoutResponse {

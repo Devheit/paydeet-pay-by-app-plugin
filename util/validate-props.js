@@ -8,7 +8,7 @@ function validateMainProps(props) {
     apiKey: validateString,
     currency: validateCurrency,
     businessId: validateString,
-    test: validateTestMode,
+    isTesting: validateTestMode,
   };
 
   for (const key in expectedProps) {
